@@ -1,0 +1,33 @@
+public class Exercicios {
+    public static void main(String[] args) {
+        /*
+        //Tabuada FOR
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("\nTabuada %d:\n", i);
+
+            for (int j = 1; j <= 10 ; j++) {
+                System.out.println(i + "X" + j + "=" + (i * j));
+            }
+
+        }
+        */
+
+        //Tabuada WHILE
+        int contador = 1;
+
+        while(contador <=10){
+            int multiplicador = 1;
+
+            System.out.printf ("\nTabuada: %d\n", contador);
+
+            while (multiplicador <= 10){
+                int resultado = multiplicador * contador;
+                System.out.println(contador + "X" + multiplicador + "=" + resultado);
+                multiplicador ++;
+
+            }
+            contador ++;
+        }
+
+    }
+}
