@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Aula {
@@ -119,5 +120,29 @@ public class Aula {
         }
         */
 
+        /*
+        //DO WHILE
+        Scanner entrada = new Scanner(System.in);
+        String valor = "";
+
+        //DO - primeira interacao é executada
+        //Primeira interacao do laco é sempre executada
+        do{
+            System.out.print("Diga me algo:");
+            valor = entrada.nextLine();
+        }while (!valor.equalsIgnoreCase("algo"));
+        //Demais interações do laço, apenas executadas se a condição for verdadeira
+        entrada.close();
+        */
+
+        //CORREÇÃO DE ERROS - TRY / CATCH
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            int numero = scanner.nextInt();
+            System.out.println(numero);
+        }catch (Exception error){
+            System.out.println("Digite apenas números!");
+        }
     }
 }
