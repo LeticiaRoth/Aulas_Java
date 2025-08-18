@@ -135,14 +135,87 @@ public class Aula {
         entrada.close();
         */
 
-        //CORREÇÃO DE ERROS - TRY / CATCH
-        Scanner scanner = new Scanner(System.in);
+       //CORREÇÃO DE ERROS - TRY / CATCH
+        //Scanner scanner = new Scanner(System.in);
 
+        /*
         try {
             int numero = scanner.nextInt();
             System.out.println(numero);
         }catch (Exception error){
             System.out.println("Digite apenas números!");
+        }*/
+
+        //EXEMPLOS
+        /*
+        System.out.print("Digite um número:");
+        String numeroEmtexto = scanner.nextLine();
+
+        try{
+            //Primeira parte do código
+            int numeroEmInt = Integer.parseInt(numeroEmtexto);
+            System.out.println("Número digitado foi " + numeroEmInt);
+
+            //Pega o erro e reporta
+        } catch (NumberFormatException | InputMismatchException e){
+            System.out.println("Formato incorreto, digita apenas números");
+
+            //É opcional, sempre executado
+        } finally {
+            System.out.println("Finally é sempre executado");
         }
+        */
+
+        /*
+        CONVERSÃO COM PARSE
+        Scanner scanner = new Scanner(System.in);
+        String numeroEmTexto = scanner.nextLine();
+        //WRAPPER
+        //Tipos primitivos: são básicos, eles salvam apenas valores.
+        //Wrappers: Eles são complexos, tem valores e funções
+        //Exemplos de Wrappers: Integer, Double, Boolean, Character
+        //Obs: Tipos primitivos são todos com letras minusculas, Wrappers ele iniciam
+        //com letra maiuscula
+
+        //ParseInt -- Converte Strings em números inteiros
+        int numeroEmInt = Integer.parseInt(numeroEmTexto);
+        //ParseDouble -- Converte String em números do tipo double
+        Double numeroEmDouble = Double.parseDouble(numeroEmTexto);
+
+        int numero = 18;
+        //ToString -- converte número em Strings
+        String numeroEmString = Integer.toString(numero);
+
+        System.out.println(numeroEmString+18);
+        */
+
+        //EXEMPLOS COM WHILE/TRY/GET
+        //Programa so aceita número e esses números devem ser maior ou igual a 20, caso forem menores ou forem outros tipos de texto, o programar
+        //pede para digitar novamente
+        //programa só encerra quando atender aos critérios acima.
+
+        //Enquanto for verdadeiro, rodará sempre
+
+        /* 
+        Scanner scanner2 = new Scanner(System.in);
+        int numero;
+        while (true){
+            try {
+                System.out.print("Digite um número: ");
+                numero = Integer.parseInt(scanner2.nextLine());
+
+                if(numero < 20){ //Verifica se o número é maior ou igual a 20
+                    System.out.println("O número que você digitou é menor que 20");
+                    continue;//Reinicia o laço
+                }
+                break;//Aqui o código está correto e é encerrado
+            }catch (NumberFormatException e){ //Verifica se foi digitador dados inválidos do que foi pelo
+                System.out.println("Opa.... Você digitou caracteres inválidos, digite apenas números");
+            }
+            //Faz a limpeza do buffer
+            //scanner2.nextLine();
+        }
+        System.out.println(numero);
+        */
     }
 }
