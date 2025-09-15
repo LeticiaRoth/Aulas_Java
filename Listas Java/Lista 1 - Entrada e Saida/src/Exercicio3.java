@@ -17,6 +17,6 @@ public class Exercicio3 {
         System.out.println("Valor dos impostos (30%): R$ " + impostos);
         System.out.println("Valor de venda: R$ " + valor_venda);
 
-
+        read.close();
     }
 }

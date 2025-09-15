@@ -37,11 +37,12 @@ public class Exercicio2 {
             mensagemDivisao = "A divisão não poderá ser realizada!";
         }
 
-        read.nextLine();
+        read.nextLine(); //Limpa o buffer
 
         //Desafio2
         double potenciacao = Math.pow(numero1,numero2);
 
         System.out.printf("\nSoma: %.2f \nSubtração: %.2f \nMultiplicação: %.2f \nDivisão: %.2f \nResto da divisão: %.2f \nDesafio 1: %s  \nPotenciação: %.2f", soma,subtracao,multiplicacao,divisao,restoDivisao,mensagemDivisao,potenciacao);
+        read.close();
     }
 }

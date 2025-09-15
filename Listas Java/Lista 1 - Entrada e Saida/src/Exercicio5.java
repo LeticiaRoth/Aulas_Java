@@ -21,6 +21,7 @@ public class Exercicio5 {
 
         double calculoGeral = calculoHoras + calculoMinutos + segundos;
         System.out.printf("Resultado geral: %.2f", calculoGeral);
+        read.close();
 
     }
 }

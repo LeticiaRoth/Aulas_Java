@@ -5,9 +5,11 @@ public class Exercicio4 {
 
         Scanner read = new Scanner(System.in);
 
+        //Número
         System.out.print("Digite um número inteiro:");
         int numero = read.nextInt();
 
+        //Antecessor e Sucessor
         int antecessor = numero - 1;
         int sucessor = numero + 1;
 

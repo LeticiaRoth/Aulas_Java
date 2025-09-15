@@ -25,9 +25,9 @@ public class Exercicio1 {
         System.out.print("\nDigite sua data de nascimento (14/02/2007): ");
         String dataTexto = read.nextLine();
 
+        //Formatação para data
         DateTimeFormatter dataFormatada = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate data = LocalDate.parse(dataTexto,dataFormatada);
-
 
         //Pretencao salarial
         System.out.print("\nDigite sua pretenção salarial: ");
