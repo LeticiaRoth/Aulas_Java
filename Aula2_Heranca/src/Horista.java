@@ -7,6 +7,21 @@ public class Horista extends Colaborador{
         this.horasTrabalhadas = horasTrabalhadas;
         this.salarioPorHora = salarioPorHora;
     }
+    //Preciso utilizar quando estou mostrando que a variavel da classe vai recever a variavel do parametro
 
-    d
+    double receberSalario(){
+        //Conta basica
+        return this.salarioPorHora * this.horasTrabalhadas;
+    }
+
+    @Override
+    public String toString() {
+        return "Horista{" +
+                "horasTrabalhadas=" + horasTrabalhadas +
+                ", edv=" + edv +
+                ", nome='" + nome + '\'' +
+                ", cargo='" + cargo + '\'' +
+                ", salarioPorHora=" + salarioPorHora +
+                '}';
+    }
 }

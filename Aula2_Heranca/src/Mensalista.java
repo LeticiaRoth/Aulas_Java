@@ -16,6 +16,7 @@ public class Mensalista extends Colaborador {
     }
 
 
+    //Ele não é implementado, entao precisamos usar a sobrecarga o @overrride para sobreescrever o que esta na classe pai na filha
     @Override
     public String toString() {
         return "Mensalista{" +
